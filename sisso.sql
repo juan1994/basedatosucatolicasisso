@@ -28,6 +28,10 @@ CREATE TABLE IF NOT EXISTS `sisso`.`tipomodalidad` (
 ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8;
 
+INSERT INTO `tipomodalidad` (`idtipoModalidad`, `descripcion`, `nombre`) VALUES
+(1, 'Modalidad de trabajo de grado', 'Trabajo de grado'),
+(2, 'Modalidad de informatica Social', 'Informatica Social');
+
 
 -- -----------------------------------------------------
 -- Table `sisso`.`proyecto`
@@ -122,6 +126,12 @@ CREATE TABLE IF NOT EXISTS `sisso`.`tipo` (
   PRIMARY KEY (`idTipo`))
 ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8;
+
+INSERT INTO `tipo` (`idTipo`, `descripcionTipo`, `nombreTipo`) VALUES
+(1, 'Administrador', 'Administrador'),
+(2, 'Docente', 'Docente'),
+(3, 'Estudiante', 'Estudiante'),
+(4, 'Egresado', 'Egresado');
 
 
 -- -----------------------------------------------------
